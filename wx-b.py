@@ -1,5 +1,5 @@
 #import urllib.request
-#import whisperx
+import whisperx
 #import gc 
 #import os
 #os.environ['TRANSFORMERS_CACHE'] = '/root/tf_cache/'
