@@ -15,3 +15,9 @@ os.environ['TRANSFORMERS_CACHE'] = '/root/tf_cache/'
 from faster_whisper.utils import download_model, format_timestamp, get_logger
 download_model("large-v2")
 whisperx.load_align_model(language_code="en", device="cpu")
+
+import torchaudio
+bundle = torchaudio.pipelines.MMS_FA
+t_model = bundle.get_model(with_star=False)
+LABELS = bundle.get_labels(star=None)
+DICTIONARY = bundle.get_dict(star=None)
