@@ -357,9 +357,9 @@ def align(
                     #segment["fw_words"][word_fw_word_idx_map[word_idx]]
                 }
                 
-                if word_text.strip() != "".join([f["word"] for f in word_segment["fw_words"]]).strip():
-                    import pdb
-                    pdb.set_trace()
+                # if word_text.strip() != "".join([f["word"] for f in word_segment["fw_words"]]).strip():
+                #     import pdb
+                #     pdb.set_trace()
                     
                 if not np.isnan(word_start):
                     word_segment["start"] = word_start
